@@ -18,16 +18,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="box-border m-0 p-0">
+    <!-- Nav-Bar -->
     <header>
-      <!-- Nav-Bar -->
       <nav
-        class="md:justify-items-start md:gap-146 m-auto flex items-center mt-10 text-center p-0 max-w-6xl"
+        class="md:justify-items-start md:gap-146 m-auto flex items-center justify-between mt-10 text-center p-0 md:max-w-6xl max-w-sm"
       >
-        <div class="max-w-6xl">
+        <div class="md:max-w-6xl max-w-sm">
           <img class="max-w-6xl" src="./assets/logo.png" alt="" />
         </div>
         <div class="">
-          <ul class="flex gap-12">
+          <ul class="md:flex md:gap-12">
             <li class="invisible md:visible"><a href="">Home</a></li>
             <li class="invisible md:visible"><a href="">Shop</a></li>
             <li class="invisible md:visible"><a href="">About us</a></li>
@@ -40,17 +40,17 @@
 
       <!-- Banner -->
       <div
-        class="flex flex-row-reverse justify-center items-center max-w-6xl m-auto items-end mt-40"
+        class="md:flex md:flex-row-reverse justify-center items-center m-auto md:items-end mt-40 md:text-center md:max-w-6xl"
       >
         <div class="">
           <img src="./assets/hero-flower.png" alt="" />
         </div>
-        <div class="max-w-[50%]">
-          <h3 class="font-bold text-6xl">
+        <div class="md:max-w-[50%] max-w-sm">
+          <h3 class="font-bold md:text-6xl text-2xl">
             ALWAYS <span class="text-[#E95A08]">FRESH</span>
           </h3>
-          <h3 class="font-bold text-6xl text-[#E95A08]">FLOWERS</h3>
-          <p class="text-2xl font-normal">
+          <h3 class="font-bold md:text-6xl text-2xl text-[#E95A08]">FLOWERS</h3>
+          <p class="md:text-2xl text-sm font-normal">
             indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
             variety of fresh flowers that are perfect for any occasion
@@ -59,17 +59,19 @@
       </div>
     </header>
     <!-- Our Plants -->
-    <div class="max-w-6xl m-auto mt-30">
+    <div class="md:max-w-6xl m-auto mt-30 max-w-sm">
       <div class="items-center justify-center grid">
-        <h3 class="text-center text-5xl font-bold mb-6">
+        <h3 class="text-center md:text-5xl text-2xl font-bold mb-6">
           <span class="text-[#E95A08]">Our</span> Plants
         </h3>
-        <p class="text-center font-normal text-2xl">
+        <p class="text-center font-normal md:text-2xl text-sm">
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop. From <br />
           classic roses to exotic blooms, we offer a wide variety of fresh
         </p>
-        <div class="grid grid-cols-4 gap-7 mt-10 text-center text-xl">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-7 mt-10 text-center text-xl"
+        >
           <div>
             <img src="./assets/sample-flower-image.png" alt="" />
             <h4 class="font-medium">Lily Blossom</h4>
@@ -154,21 +156,23 @@
       </div>
     </div>
     <!--Flower and plants lover  -->
-    <div class="flex justify-center items-center max-w-6xl m-auto gap-20 mt-28">
+    <div
+      class="md:flex grid justify-center items-center md:max-w-6xl m-auto md:gap-20 mt-28 max-w-sm"
+    >
       <div class="relative">
         <img class="" src="./assets/flower-store.png" alt="" />
         <img
-          class="absolute bottom-105 left-80 max-w-3xs max-h-3xs"
+          class="md:visible invisible md:absolute md:bottom-105 md:left-80 md:max-w-3xs md:max-h-3xs"
           src="./assets/trusted-badge.png"
           alt=""
         />
       </div>
-      <div class="max-w-[50%]">
-        <h3 class="font-bold text-5xl mb-6">
+      <div class="md:max-w-[50%]">
+        <h3 class="font-bold md:text-5xl text-2xl mb-6">
           Flower & Plants <br />
           Lover
         </h3>
-        <ul class="font-normal list-disc text-2xl">
+        <ul class="font-normal list-disc md:text-2xl text-sm">
           <li class="mb-5">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
@@ -188,22 +192,22 @@
       </div>
     </div>
     <!--  Latest Deals -->
-    <div class="max-w-6xl m-auto text-center mt-34 p-5">
-      <h3 class="text-5xl my-7">
+    <div class="md:max-w-6xl m-auto text-center md:mt-34 p-5 max-w-sm">
+      <h3 class="md:text-5xl text-2xl my-7">
         <span class="text-[#E95A08]">Latest</span> Deals
       </h3>
-      <p class="text-2xl text-shadow-black">
+      <p class="md:text-2xl text-sm text-shadow-black">
         Indulge your senses with the beauty and fragrance of our fresh flower
         shop. From <br />
         classic roses to exotic blooms, we offer a wide variety of fresh
       </p>
     </div>
     <div
-      class="max-w-6xl h-[420px] m-auto justify-center flex gap-7 text-white"
+      class="md:max-w-6xl md:h-[420px] m-auto justify-center md:flex md:gap-7 text-white grid gap-1"
     >
-      <div class="w-[30%] flex flex-col gap-7 text-xl">
+      <div class="md:w-[30%] grid gap-2 md:flex flex-col md:gap-7 text-xl">
         <div
-          class="bg-[url(./assets/deal-bloom.png)] h-[50%] rounded-xl grid justify-center items-center text-center"
+          class="bg-[url(./assets/deal-bloom.png)] md:h-[50%] rounded-xl grid justify-center items-center text-center w-[361px] h-[200px]"
         >
           <div class="">
             <h3 class="">
@@ -214,7 +218,7 @@
           </div>
         </div>
         <div
-          class="bg-[url(./assets/deal-ana.png)] h-[50%] rounded-xl grid justify-center items-center text-center"
+          class="bg-[url(./assets/deal-ana.png)] md:h-[50%] rounded-xl grid justify-center items-center text-center w-[361px] h-[200px]"
         >
           <div>
             <h3>
@@ -225,9 +229,9 @@
         </div>
       </div>
       <div
-        class="bg-[url(./assets/deal-zabo.png)] w-[60%] h-[100%] rounded-xl grid justify-center items-center text-center"
+        class="bg-[url(./assets/deal-zabo.png)] md:w-[60%] md:h-[100%] rounded-xl grid justify-center items-center text-center h-[200px] w-[361px]"
       >
-        <div class="text-5xl h-[48px]">
+        <div class="md:text-5xl md:h-[48px] text-xl">
           <h3>
             25% Off
             <span class="border-l-4 border-white p-2">Zabo Plant</span>
@@ -238,24 +242,27 @@
     </div>
     <!--Join the colorful bunch  -->
     <div
-      class="bg-[url(./assets/news-letter-bg.png)] grid justify-center items-center text-center w-[1440px] h-[533px] w-[100%] m-auto mt-14"
+      class="bg-[url(./assets/news-letter-bg.png)] grid justify-center items-center text-center md:w-[1440px] md:h-[533px] m-auto mt-14 h-[275px] w-[393]"
     >
       <div class="text-white">
-        <h3 class="text-5xl p-8 font-bold">Join the colorful Bunch</h3>
+        <h3 class="md:text-5xl text-xl p-8 font-bold">
+          Join the colorful Bunch
+        </h3>
         <input
-          class="bg-white text-base w-[644px] h-[50px] text-black"
+          class="bg-white text-base md:w-[644px] w-[218px] h-[50px] text-black"
           type="email"
           name=""
           id=""
           placeholder="Write email"
         />
-        <button class="text-base w-[186px] h-[50px] bg-[#E95A08]">
+        <button class="text-base md:w-[186px] w-[103px] h-[50px] bg-[#E95A08]">
           Subscribe
         </button>
       </div>
     </div>
-    <footer class="max-w-6xl m-auto mt-20 mb-20">
-      <div class="grid grid-cols-[2fr_1fr_1fr_2fr] justify-between gap-10">
+    <!-- Footer -->
+    <footer class="md:max-w-6xl m-auto mt-20 mb-20 p-10">
+      <div class="md:grid grid-cols-[2fr_1fr_1fr_2fr] justify-between gap-10">
         <div>
           <img src="./assets/logo.png" alt="" />
           <p class="text-2xl">
